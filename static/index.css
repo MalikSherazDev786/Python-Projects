@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.task-card {
+    width: 70%;
+    background-color: gray;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+
+.input-submission {
+    width: 50%;
+    /* background-color: green; */
+    margin: 15px auto;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+input {
+    width: 350px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.add {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: rgb(15, 228, 15);
+    color: white;
+}
+
+.task-handler {
+    width: 50%;
+    /* background-color: yellow; */
+    margin: 15px auto;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-around;
+    /* line-height: 10px; */
+
+}
+
+p {
+    width: 350px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-size: 18px;
+    font-weight: 600;   
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: rgb(241, 65, 65);
+    color: white;
+}

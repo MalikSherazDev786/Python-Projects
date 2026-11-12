@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do - FlaskApp</title>
+        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5/css/all.min.css'>
+        <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    </head>
+    <body>
+        <div class='task-card'>
+            <h1>To-Do App</h1>
+            <form action='/add' method="POST" class='input-submission'>
+                <input type='text' name="task_name" placeholder='Enter your task....'>
+                <button class='add'>+</button>
+            </form>
+            {% for task in tasks%}
+                <div class='task-handler'>
+                    <p>{{task}}</p> 
+                    <form action='/delete/{{loop.index0}}' method='POST'><button>×</button>
+                    </form>
+                </div>
+            {%endfor%}    
+        </div>
+    </body>
+</html>
